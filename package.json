@@ -9,6 +9,7 @@
   "author": "Rojin",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.21.1",
     "telegraf": "^4.12.2"
   }
 }
