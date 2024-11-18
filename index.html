@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Mini App</title>
+</head>
+<body>
+  <h1>Welcome to Theta Collectibles</h1>
+  <button id="closeApp">Uygulamayı Kapat</button>
+
+  <script>
+    // Telegram entegrasyonu
+    const telegram = window.Telegram.WebApp;
+    telegram.ready();
+
+    // Kullanıcı bilgilerini al
+    const user = telegram.initDataUnsafe?.user || {};
+    console.log("Telegram Kullanıcı:", user);
+
+    // Kapatma işlemi
+    document.getElementById("closeApp").addEventListener("click", () => {
+      telegram.close();
+    });
+  </script>
+</body>
+</html>
