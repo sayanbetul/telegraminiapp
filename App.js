@@ -9,7 +9,7 @@ const App = () => {
     // Kullanıcı Bilgisi Örneği
     if (window.Telegram?.WebApp?.initDataUnsafe) {
       const user = window.Telegram.WebApp.initDataUnsafe.user;
-      console.log("Kullanıcı Bilgisi:", user);
+      console.log("User İnfo:", user);
     }
   }, []);
 
@@ -20,7 +20,7 @@ const App = () => {
         onClick={() => window.Telegram.WebApp.close()}
         style={{ padding: "10px", background: "green", color: "white" }}
       >
-        Uygulamayı Kapat
+        Close App
       </button>
     </div>
   );

@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>Welcome to Theta Collectibles</h1>
-  <button id="closeApp">Uygulamayı Kapat</button>
+  <button id="closeApp">Close </button>
 
   <script>
     // Telegram entegrasyonu
@@ -16,7 +16,7 @@
 
     // Kullanıcı bilgilerini al
     const user = telegram.initDataUnsafe?.user || {};
-    console.log("Telegram Kullanıcı:", user);
+    console.log("Telegram User:", user);
 
     // Kapatma işlemi
     document.getElementById("closeApp").addEventListener("click", () => {

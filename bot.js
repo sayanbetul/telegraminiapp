@@ -5,13 +5,13 @@ const bot = new Telegraf('7139920299:AAHUBVmGuoYZU9VcHBaX_SZQ94-w794Bca0'); // B
 // /start komutuyla Mini App bağlantısını gönder
 bot.start((ctx) => {
   ctx.reply(
-    "Theta Collectibles'a hoş geldiniz! Mini App'i açmak için aşağıdaki linke tıklayın:",
+    "Welcome to Theta Collectibles! Open the Magic Link:",
     {
       reply_markup: {
         inline_keyboard: [
           [
             {
-              text: "Mini App'i Aç",
+              text: "Mini App",
               web_app: { url: "https://thetacollectibles-main.vercel.app/" }, // Web uygulamanızın URL'si
             },
           ],
