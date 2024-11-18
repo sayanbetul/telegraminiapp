@@ -1,5 +1,5 @@
 {
-  "name": "theta-telegram-bot",
+  "name": "thetacollectbot",
   "version": "1.0.0",
   "description": "A Telegram bot for Theta Collectibles",
   "main": "bot.js",
